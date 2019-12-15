@@ -4,6 +4,7 @@ import CheckListLayout from '../Layout/CheckListLayout';
 import Empty from './Empty';
 import Separator from './VerticalSeparator';
 import ItemDetailList from './ItemDetailList';
+import {connect} from 'react-redux';
 
 class DeatilList extends Component {
   renderEmpty = () => <Empty text="No hay sugerencias" />;
@@ -13,37 +14,10 @@ class DeatilList extends Component {
   };
 
   render() {
-    const list = [
-      {
-        key: '1',
-        detail: 'item 1',
-        nota: 'Nota item 1',
-        complete: false,
-      },
-      {
-        key: '2',
-        detail: 'item 2',
-        nota: 'Nota item 1',
-        complete: false,
-      },
-      {
-        key: '3',
-        detail: 'item 3',
-        nota: 'Nota item 1',
-        complete: false,
-      },
-      {
-        key: '4',
-        detail: 'item 4',
-        nota: 'Nota item 1',
-        complete: false,
-      },
-    ];
-
     return (
       <CheckListLayout title="Listas creadas">
         <FlatList
-          data={list}
+          data={this.props.items}
           ListEmptyComponent={this.renderEmpty}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}
@@ -54,4 +28,11 @@ class DeatilList extends Component {
   }
 }
 
-export default DeatilList;
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(
+  mapStateToProps,
+  null,
+)(DeatilList);

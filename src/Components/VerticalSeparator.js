@@ -7,8 +7,9 @@ const VerticalSeparator = () => {
 
 const styles = StyleSheet.create({
   separator: {
-    borderTopWidth: 1,
-    borderTopColor: '#eaeaea',
+    height: 1,
+    width: '100%',
+    backgroundColor: '#CED0CE',
   },
 });
 

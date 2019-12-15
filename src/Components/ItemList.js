@@ -1,21 +1,26 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
-import CheckBox from '@react-native-community/checkbox';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import ListControl from './ListControl';
 
 const ItemList = props => {
   return (
     <View style={styles.container}>
       <View style={styles.lista}>
-        <View style={styles.header}>
-          <Text style={styles.title}>{props.detail}</Text>
-          <Text>Type: {props.categoria}</Text>
+        <View style={styles.containerHeader}>
+          <View style={styles.headerTitle}>
+            <TouchableOpacity>
+              <Text style={styles.title}>{props.detail}</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.headerCategory}>
+            <Text style={styles.categoria}>{props.categoria}</Text>
+          </View>
         </View>
         <View style={styles.detail}>
           <Text>{props.resumen}</Text>
         </View>
-        <View style={styles.footer}>
-          <Text>Autor: {props.autor}</Text>
-          <Text>Fecha: {props.fecha}</Text>
+        <View>
+          <ListControl date={props.fecha} />
         </View>
       </View>
     </View>
@@ -28,11 +33,19 @@ const styles = StyleSheet.create({
   },
   lista: {
     borderRadius: 5,
-    borderColor: 'black',
     borderWidth: 1,
-    padding: 5,
+    borderColor: '#4c4c4c',
+    padding: 10,
   },
-  header: {
+  categoria: {
+    backgroundColor: '#85E7F2',
+    borderRadius: 5,
+    padding: 5,
+    fontSize: 10,
+    fontWeight: 'bold',
+  },
+  containerHeader: {
+    flexDirection: 'row',
     justifyContent: 'space-between',
   },
   title: {

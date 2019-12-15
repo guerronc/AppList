@@ -7,11 +7,11 @@
  */
 
 import React, {Component} from 'react';
-import Home from './src/Screens/Home';
-import Header from './src/Components/Header';
-import List from './src/Components/List';
-import CheckList from './src/Screens/CheckList';
-import DeatilList from './src/Components/DetailList';
+import Home from './src/screens/Home';
+import Header from './src/components/Header';
+import List from './src/components/List';
+import CheckList from './src/screens/CheckList';
+import DeatilList from './src/components/DetailList';
 import {Provider} from 'react-redux';
 import store from './store';
 
@@ -23,10 +23,10 @@ class App extends Component {
           <Header />
           <List />
         </Home>
-        <CheckList>
+        {/* <CheckList>
           <Header />
           <DeatilList />
-        </CheckList>
+        </CheckList> */}
       </Provider>
     );
   }
