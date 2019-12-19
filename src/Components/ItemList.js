@@ -7,20 +7,20 @@ const ItemList = props => {
     <View style={styles.container}>
       <View style={styles.lista}>
         <View style={styles.containerHeader}>
-          <View style={styles.headerTitle}>
+          <View style={styles.containerHeaderTitle}>
             <TouchableOpacity>
-              <Text style={styles.title}>{props.detail}</Text>
+              <Text style={styles.title}>{props.title}</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.headerCategory}>
-            <Text style={styles.categoria}>{props.categoria}</Text>
+          <View style={styles.containerheaderCategory}>
+            <Text style={styles.categoria}>{props.categories}</Text>
           </View>
         </View>
-        <View style={styles.detail}>
-          <Text>{props.resumen}</Text>
+        <View style={styles.title}>
+          <Text>{props.summary}</Text>
         </View>
         <View>
-          <ListControl date={props.fecha} />
+          <ListControl date={props.date} />
         </View>
       </View>
     </View>
@@ -43,10 +43,16 @@ const styles = StyleSheet.create({
     padding: 5,
     fontSize: 10,
     fontWeight: 'bold',
+    marginRight: 2,
   },
-  containerHeader: {
+  containerHeader: {},
+  containerHeaderTitle: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
+  },
+  containerheaderCategory: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
   title: {
     textAlign: 'center',

@@ -4,6 +4,7 @@ import ListLayout from '../Layout/ListLayout';
 import Empty from './Empty';
 import Separator from './VerticalSeparator';
 import ItemList from './ItemList';
+import * as actionList from '../actions/actionList';
 import {connect} from 'react-redux';
 
 class List extends Component {
@@ -19,6 +20,10 @@ class List extends Component {
       </View>
     );
   };
+  componentDidMount() {
+    const {traerTodas} = this.props;
+    traerTodas();
+  }
 
   render() {
     return (
@@ -28,7 +33,7 @@ class List extends Component {
           ListEmptyComponent={this.renderEmpty}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}
-          keyExtractor={item => item.key}
+          keyExtractor={item => item.id}
           ListFooterComponent={this.renderFooter}
         />
       </ListLayout>
@@ -48,4 +53,4 @@ const mapStateToProps = state => {
   return state;
 };
 
-export default connect(mapStateToProps, null)(List);
+export default connect(mapStateToProps, actionList)(List);
