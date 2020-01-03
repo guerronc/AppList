@@ -1,4 +1,4 @@
-import {SET_LISTS, ERROR} from '../types/listTypes';
+import {SET_LISTS, ERROR, GET_LIST} from '../types/listTypes';
 import Data from '../utils/data.json';
 
 export const traerTodas = () => async dispatch => {

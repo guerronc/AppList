@@ -1,31 +1,49 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import ListControl from './ListControl';
+import {withNavigation} from 'react-navigation';
+import {NavigationActions} from 'react-navigation';
+import * as actionList from '../actions/actionList';
+import {connect} from 'react-redux';
 
-const ItemList = props => {
-  return (
-    <View style={styles.container}>
-      <View style={styles.lista}>
-        <View style={styles.containerHeader}>
-          <View style={styles.containerHeaderTitle}>
-            <TouchableOpacity>
-              <Text style={styles.title}>{props.title}</Text>
-            </TouchableOpacity>
+class ItemList extends Component {
+  handlePressItem = () => {
+    this.props.navigation.dispatch(
+      NavigationActions.navigate({
+        routeName: 'CheckList',
+        params: {
+          id: this.props.id,
+        },
+      }),
+    );
+  };
+
+  render() {
+    return (
+      <View style={styles.container}>
+        {console.log('ItemList: ', this.props)}
+        <View style={styles.lista}>
+          <View style={styles.containerHeader}>
+            <View style={styles.containerHeaderTitle}>
+              <TouchableOpacity onPress={this.handlePressItem}>
+                <Text style={styles.title}>{this.props.title}</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.containerheaderCategory}>
+              <Text style={styles.categoria}>{this.props.categories}</Text>
+            </View>
           </View>
-          <View style={styles.containerheaderCategory}>
-            <Text style={styles.categoria}>{props.categories}</Text>
+          <View style={styles.title}>
+            <Text>{this.props.summary}</Text>
           </View>
-        </View>
-        <View style={styles.title}>
-          <Text>{props.summary}</Text>
-        </View>
-        <View>
-          <ListControl date={props.date} />
+          <View>
+            <ListControl {...this.props} />
+          </View>
         </View>
       </View>
-    </View>
-  );
-};
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -70,4 +88,8 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ItemList;
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(mapStateToProps, actionList)(withNavigation(ItemList));

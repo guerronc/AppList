@@ -10,7 +10,7 @@ import {
 
 const INITIAL_STATE = {
   list: {},
-  items: {},
+  selected: {},
   cargando: false,
   error: '',
 };
@@ -23,8 +23,9 @@ function list(state = INITIAL_STATE, action) {
       break;
     case UPDATE_LIST:
       break;
-    case GET_LIST:
-      break;
+    case GET_LIST: {
+      return {...state, selected: action.payload};
+    }
     case GET_ALL_LIST:
       break;
     case SET_LISTS: {
