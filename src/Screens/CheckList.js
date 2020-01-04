@@ -10,19 +10,20 @@ class CheckList extends Component {
   renderEmpty = () => <Empty text="No hay sugerencias" />;
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
-    return <ItemDetailList {...item} />;
+    return <ItemDetailList {...item} data={this.props.list[0]} />;
   };
 
   render() {
+    const {items} = this.props.list[0];
     return (
-      <CheckListLayout title="Listas creadas">
-        {console.log('DetailItem:', this.props)}
+      <CheckListLayout title={this.props.list[0].title}>
+        {console.log('DetailItem:', items)}
         <FlatList
-          data={this.props.items}
+          data={items}
           ListEmptyComponent={this.renderEmpty}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}
-          keyExtractor={item => item.key}
+          keyExtractor={item => item.id}
         />
       </CheckListLayout>
     );

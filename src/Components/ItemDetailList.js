@@ -13,6 +13,7 @@ class ItemDetailList extends Component {
     });
   };
   render() {
+    const {categories, date} = this.props.data;
     return (
       <>
         <View style={styles.container}>
@@ -24,7 +25,8 @@ class ItemDetailList extends Component {
           <Text>{this.props.detail}</Text>
         </View>
         <View>
-          <Text>{this.props.nota}</Text>
+          <Text>{date}</Text>
+          <Text>{categories}</Text>
         </View>
       </>
     );

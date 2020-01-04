@@ -30,13 +30,6 @@ class Home extends Component {
     const {traerTodas} = this.props;
     traerTodas();
   }
-  // handlePressItem = () => {
-  //   this.props.navigation.dispatch(
-  //     NavigationActions.navigate({
-  //       routeName: 'CheckList',
-  //     }),
-  //   );
-  // };
 
   render() {
     return (
@@ -46,7 +39,7 @@ class Home extends Component {
           ListEmptyComponent={this.renderEmpty}
           ItemSeparatorComponent={this.itemSeparator}
           renderItem={this.renderItem}
-          keyExtractor={item => item.id}
+          keyExtractor={item => item._id}
           ListFooterComponent={this.renderFooter}
         />
       </ListLayout>
