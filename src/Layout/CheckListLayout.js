@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, ScrollView, View} from 'react-native';
+import {StyleSheet, ScrollView, SafeAreaView} from 'react-native';
 
 const CheckListLayout = props => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <ScrollView>{props.children}</ScrollView>
-    </View>
+    </SafeAreaView>
   );
 };
 

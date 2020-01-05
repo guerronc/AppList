@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {Text, View, StyleSheet} from 'react-native';
+import {Text, StyleSheet, SafeAreaView} from 'react-native';
 
 const ListLayout = props => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.title}>{props.title}</Text>
       {props.children}
-    </View>
+    </SafeAreaView>
   );
 };
 
