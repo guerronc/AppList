@@ -14,3 +14,20 @@ export const traerTodas = () => async dispatch => {
     });
   }
 };
+
+export const traerLista = id => async dispatch => {
+  try {
+    const list = Data.filter(d => d._id === id);
+    console.log('Lista: ', list);
+
+    dispatch({
+      type: GET_LIST,
+      payload: list,
+    });
+  } catch (error) {
+    dispatch({
+      type: ERROR,
+      payload: `Informacion de tareas no disponible. Detalle error: ${error.message}`,
+    });
+  }
+};

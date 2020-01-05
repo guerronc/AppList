@@ -13,17 +13,19 @@ import Edit from '../../assets/editList.png';
 import moment from 'moment';
 import {withNavigation} from 'react-navigation';
 import {NavigationActions} from 'react-navigation';
+import * as actionList from '../actions/actionList';
+import {connect} from 'react-redux';
 
 const ListControl = props => {
   let date = moment(props.date, 'YYYYMMDD').fromNow();
 
   const handlePressItem = () => {
+    const {traerLista} = props;
+    traerLista(props._id);
+
     props.navigation.dispatch(
       NavigationActions.navigate({
         routeName: 'CheckList',
-        params: {
-          id: props.id,
-        },
       }),
     );
   };
@@ -112,4 +114,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withNavigation(ListControl);
+const mapStateToProps = state => {
+  return state;
+};
+
+export default connect(
+  mapStateToProps,
+  actionList,
+)(withNavigation(ListControl));

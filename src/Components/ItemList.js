@@ -8,12 +8,12 @@ import {connect} from 'react-redux';
 
 class ItemList extends Component {
   handlePressItem = () => {
+    const {traerLista} = this.props;
+    traerLista(this.props._id);
+
     this.props.navigation.dispatch(
       NavigationActions.navigate({
         routeName: 'CheckList',
-        params: {
-          id: this.props.id,
-        },
       }),
     );
   };

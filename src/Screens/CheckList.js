@@ -4,6 +4,7 @@ import CheckListLayout from '../Layout/CheckListLayout';
 import Empty from '../components/Empty';
 import Separator from '../components/VerticalSeparator';
 import ItemDetailList from '../components/ItemDetailList';
+import * as actionList from '../actions/actionList';
 import {connect} from 'react-redux';
 import Footer from '../components/Footer';
 import Add from '../components/Add';
@@ -14,30 +15,34 @@ YellowBox.ignoreWarnings([
 ]);
 
 class CheckList extends Component {
+  constructor(props) {
+    super(props);
+    this.data = props.selected[0] ? props.selected[0] : {};
+  }
   renderEmpty = () => <Empty text="No hay sugerencias" />;
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
-    return <ItemDetailList {...item} data={this.props.list[0]} />;
+    return <ItemDetailList {...item} data={this.data} />;
   };
   renderFooter = () => {
-    return <Footer data={this.props.list[0]} />;
+    return <Footer data={this.data} />;
   };
 
   renderHeader = () => {
+    const {title, summary} = this.data;
     return (
       <View style={styles.containerTitle}>
-        <TextInput style={styles.titleHeader}>
-          {this.props.list[0].title}
-        </TextInput>
+        <TextInput style={styles.titleHeader}>{title}</TextInput>
         <TextInput style={styles.summaryHeader} multiline={true}>
-          {this.props.list[0].summary}
+          {summary}
         </TextInput>
       </View>
     );
   };
 
   render() {
-    const {items} = this.props.list[0];
+    const {items} = this.data;
+
     return (
       <Fragment>
         <CheckListLayout>
@@ -80,4 +85,4 @@ const mapStateToProps = state => {
   return state;
 };
 
-export default connect(mapStateToProps, null)(CheckList);
+export default connect(mapStateToProps, actionList)(CheckList);
