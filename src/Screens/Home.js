@@ -1,11 +1,12 @@
-import React, {Component} from 'react';
-import {View, StyleSheet, FlatList, ActivityIndicator} from 'react-native';
+import React, {Component, Fragment} from 'react';
+import {View, StyleSheet, FlatList} from 'react-native';
 import ListLayout from '../Layout/ListLayout';
 import Empty from '../components/Empty';
 import Separator from '../components/VerticalSeparator';
 import ItemList from '../components/ItemList';
 import * as actionList from '../actions/actionList';
 import {connect} from 'react-redux';
+import Add from '../components/Add';
 
 class Home extends Component {
   static navigationOptions = ({navigation, navigationOptions}) => {
@@ -20,11 +21,7 @@ class Home extends Component {
     return <ItemList {...item} />;
   };
   renderFooter = () => {
-    return (
-      <View style={styles.footer}>
-        <ActivityIndicator animating size="large" />
-      </View>
-    );
+    return <View style={styles.footer}></View>;
   };
   componentDidMount() {
     const {traerTodas} = this.props;
@@ -33,16 +30,19 @@ class Home extends Component {
 
   render() {
     return (
-      <ListLayout title="TODAY">
-        <FlatList
-          data={this.props.list}
-          ListEmptyComponent={this.renderEmpty}
-          ItemSeparatorComponent={this.itemSeparator}
-          renderItem={this.renderItem}
-          keyExtractor={item => item._id}
-          ListFooterComponent={this.renderFooter}
-        />
-      </ListLayout>
+      <Fragment>
+        <ListLayout title="TODAY">
+          <FlatList
+            data={this.props.list}
+            ListEmptyComponent={this.renderEmpty}
+            ItemSeparatorComponent={this.itemSeparator}
+            renderItem={this.renderItem}
+            keyExtractor={item => item._id}
+            ListFooterComponent={this.renderFooter}
+          />
+        </ListLayout>
+        <Add />
+      </Fragment>
     );
   }
 }

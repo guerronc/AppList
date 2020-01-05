@@ -21,7 +21,6 @@ class ItemList extends Component {
   render() {
     return (
       <View style={styles.container}>
-        {console.log('ItemList: ', this.props)}
         <View style={styles.lista}>
           <View style={styles.containerHeader}>
             <View style={styles.containerHeaderTitle}>

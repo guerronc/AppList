@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet, TextInput} from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
 
 class ItemDetailList extends Component {
@@ -13,22 +13,15 @@ class ItemDetailList extends Component {
     });
   };
   render() {
-    const {categories, date} = this.props.data;
     return (
-      <>
-        <View style={styles.container}>
-          <CheckBox
-            value={this.state.checked}
-            disable={false}
-            onValueChange={this.handleChange}
-          />
-          <Text>{this.props.detail}</Text>
-        </View>
-        <View>
-          <Text>{date}</Text>
-          <Text>{categories}</Text>
-        </View>
-      </>
+      <View style={styles.container}>
+        <CheckBox
+          value={this.state.checked}
+          disable={false}
+          onValueChange={this.handleChange}
+        />
+        <TextInput value={this.props.detail} />
+      </View>
     );
   }
 }
@@ -46,19 +39,9 @@ const styles = StyleSheet.create({
   header: {
     justifyContent: 'space-between',
   },
-  title: {
-    textAlign: 'center',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
   detail: {
-    flex: 1,
     padding: 15,
     alignItems: 'center',
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
   },
 });
 

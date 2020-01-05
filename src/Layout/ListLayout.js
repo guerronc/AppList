@@ -5,7 +5,6 @@ import {Text, View, StyleSheet} from 'react-native';
 const ListLayout = props => {
   return (
     <View style={styles.container}>
-      {console.log('ListLayout: ', props)}
       <Text style={styles.title}>{props.title}</Text>
       {props.children}
     </View>
