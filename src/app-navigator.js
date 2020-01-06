@@ -1,8 +1,12 @@
 import {createStackNavigator} from 'react-navigation-stack';
-import {createAppContainer} from 'react-navigation';
+import {createAppContainer, createSwitchNavigator} from 'react-navigation';
 import Home from './screens/Home';
 import CheckList from './screens/CheckList';
 import React, {Component} from 'react';
+import {createDrawerNavigator} from 'react-navigation-drawer';
+import About from './screens/About';
+import Loading from './screens/Loading';
+import Login from './screens/Login';
 
 const Main = createStackNavigator(
   {
@@ -23,7 +27,24 @@ const Main = createStackNavigator(
   },
 );
 
-const AppContainer = createAppContainer(Main);
+const DrawerNavigator = createDrawerNavigator({
+  Main: Main,
+  About: About,
+});
+
+const AppSwitch = createSwitchNavigator({
+  Loading: {
+    screen: Loading,
+  },
+  Login: {
+    screen: Login,
+  },
+  App: {
+    screen: DrawerNavigator,
+  },
+});
+
+const AppContainer = createAppContainer(AppSwitch);
 
 class App extends Component {
   render() {
