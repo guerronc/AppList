@@ -17,9 +17,11 @@ YellowBox.ignoreWarnings([
 class CheckList extends Component {
   constructor(props) {
     super(props);
-    this.data = props.selected[0] ? props.selected[0] : {};
+    this.data = props.selected ? props.selected : {};
   }
-  renderEmpty = () => <Empty text="No hay sugerencias" />;
+  renderEmpty = () => (
+    <Empty text="No hay items para tu lista, ingresa en el boton de la parte inferior" />
+  );
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
     return <ItemDetailList {...item} data={this.data} />;
@@ -52,7 +54,7 @@ class CheckList extends Component {
             ListEmptyComponent={this.renderEmpty}
             ItemSeparatorComponent={this.itemSeparator}
             renderItem={this.renderItem}
-            keyExtractor={item => item.id}
+            keyExtractor={item => item._id.toString()}
             ListFooterComponent={this.renderFooter}
           />
         </CheckListLayout>

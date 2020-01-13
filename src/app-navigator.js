@@ -27,18 +27,25 @@ const Main = createStackNavigator(
   },
 );
 
-const DrawerNavigator = createDrawerNavigator({
-  Main: Main,
-  About: About,
-});
+const DrawerNavigator = createDrawerNavigator(
+  {
+    Main: Main,
+    About: About,
+  },
+  {
+    drawerWidth: 200,
+    drawerBackgroundColor: '#f6f6f6',
+    contentOptions: {},
+  },
+);
 
 const AppSwitch = createSwitchNavigator({
-  Loading: {
-    screen: Loading,
-  },
-  Login: {
-    screen: Login,
-  },
+  // Loading: {
+  //   screen: Loading,
+  // },
+  // Login: {
+  //   screen: Login,
+  // },
   App: {
     screen: DrawerNavigator,
   },

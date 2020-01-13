@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   View,
   Text,
@@ -8,6 +8,7 @@ import {
   Alert,
 } from 'react-native';
 import Checked from '../../assets/checkedList.png';
+import unChecked from '../../assets/unchecked.png';
 import Delete from '../../assets/deleteList.png';
 import Edit from '../../assets/editList.png';
 import moment from 'moment';
@@ -16,21 +17,22 @@ import {NavigationActions} from 'react-navigation';
 import * as actionList from '../actions/actionList';
 import {connect} from 'react-redux';
 
-const ListControl = props => {
-  let date = moment(props.date, 'YYYYMMDD').fromNow();
+class ListControl extends Component {
+  date = moment(this.props.date, 'YYYYMMDD').fromNow();
 
-  const handlePressItem = () => {
-    const {traerLista} = props;
-    traerLista(props._id);
+  handlePressItem = () => {
+    const {getList} = this.props;
+    getList(this.props._id);
 
-    props.navigation.dispatch(
+    this.props.navigation.dispatch(
       NavigationActions.navigate({
         routeName: 'CheckList',
       }),
     );
   };
 
-  const deleteList = item => {
+  deleteList = item => {
+    const {deleteList} = this.props;
     Alert.alert(
       'Eliminar lista',
       'Seguro quiere eliminar la lista',
@@ -40,13 +42,14 @@ const ListControl = props => {
           onPress: () => console.log('Cancel Pressed'),
           style: 'cancel',
         },
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
+        {text: 'OK', onPress: () => deleteList(this.props._id)},
       ],
       {cancelable: false},
     );
   };
 
-  const checkedList = item => {
+  checkedList = item => {
+    const {toggleList} = this.props;
     Alert.alert(
       'Marcar como completada',
       'La lista se movera a compleadas',
@@ -56,34 +59,40 @@ const ListControl = props => {
           onPress: () => console.log('Cancel Pressed'),
           style: 'cancel',
         },
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
+        {text: 'OK', onPress: () => toggleList(this.props._id)},
       ],
       {cancelable: false},
     );
   };
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.containerText}>
-        <Text style={styles.date}>{date}</Text>
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.containerText}>
+          <Text style={styles.date}>{this.date}</Text>
+        </View>
+        <View style={styles.containerControls}>
+          <TouchableOpacity onPress={this.handlePressItem}>
+            <Image style={styles.image} source={Edit} />
+            <Text style={styles.textButton}>Edit</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.checkedList}>
+            {this.props.complete ? (
+              <Image style={styles.image} source={Checked} />
+            ) : (
+              <Image style={styles.image} source={unChecked} />
+            )}
+            <Text style={styles.textButton}>Checked</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.deleteList}>
+            <Image style={styles.image} source={Delete} />
+            <Text style={styles.textButton}>Delete</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-      <View style={styles.containerControls}>
-        <TouchableOpacity onPress={handlePressItem}>
-          <Image style={styles.image} source={Edit} />
-          <Text style={styles.textButton}>Edit</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={checkedList}>
-          <Image style={styles.image} source={Checked} />
-          <Text style={styles.textButton}>Checked</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={deleteList}>
-          <Image style={styles.image} source={Delete} />
-          <Text style={styles.textButton}>Delete</Text>
-        </TouchableOpacity>
-      </View>
-    </View>
-  );
-};
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {

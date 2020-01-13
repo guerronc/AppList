@@ -5,3 +5,7 @@ export const GET_LIST = 'get_list';
 export const GET_ALL_LIST = 'get_all_list';
 export const SET_LISTS = 'set_all_list';
 export const ERROR = 'error';
+export const COMPLETE = 'complete_list';
+export const SET_LIST_TODAY = 'set_all_list_today';
+export const SET_LIST_WEEK = 'set_all_list_week';
+export const SET_LIST_OLD = 'set_all_list_old';

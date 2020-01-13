@@ -8,8 +8,8 @@ import {connect} from 'react-redux';
 
 class ItemList extends Component {
   handlePressItem = () => {
-    const {traerLista} = this.props;
-    traerLista(this.props._id);
+    const {getList} = this.props;
+    getList(this.props._id);
 
     this.props.navigation.dispatch(
       NavigationActions.navigate({

@@ -1,615 +1,546 @@
 [
   {
-    "_id": "7a4c0bed-e976-4962-b2bd-edc202d89eed",
-    "title": "pede lobortis ligula sit amet eleifend",
-    "date": "2019/10/02",
-    "summary": "massa id lobortis convallis tortor risus dapibus augue vel accumsan tellus nisi eu orci",
+    "_id": 1,
+    "title": "arcu sed augue aliquam erat volutpat",
+    "date": "12/28/2019",
+    "summary": "id nisl venenatis lacinia aenean sit amet justo morbi ut odio",
     "complete": true,
-    "categories": "school",
+    "categories": ["travel", "food"],
     "items": [
+      {"_id": 1, "detail": "mi sit amet lobortis sapien", "complete": false},
       {
-        "id": "fe10bc4b-658a-4707-80d2-3e37d685b4dc",
-        "detail": "sociis natoque penatibus et magnis",
+        "_id": 2,
+        "detail": "at feugiat non pretium quis lectus",
         "complete": true
       },
       {
-        "id": "c3b9ce82-c360-4f4c-90f2-3794b7390344",
-        "detail": "nulla suspendisse potenti cras in purus eu",
+        "_id": 3,
+        "detail": "pellentesque at nulla suspendisse potenti cras",
         "complete": true
       },
       {
-        "id": "8df8b0f9-123e-4468-8e9a-9ed13b17ef67",
-        "detail": "diam id ornare imperdiet sapien urna",
+        "_id": 4,
+        "detail": "suspendisse potenti nullam porttitor lacus at",
         "complete": false
       },
       {
-        "id": "7b6ee0ce-20fd-4db4-bcfd-97672bcdb3c6",
-        "detail": "faucibus orci luctus et ultrices",
-        "complete": true
+        "_id": 5,
+        "detail": "lectus suspendisse potenti in eleifend quam",
+        "complete": false
       },
+      {"_id": 6, "detail": "ac consequat metus sapien ut", "complete": false},
+      {"_id": 7, "detail": "in ante vestibulum ante ipsum", "complete": true},
+      {"_id": 8, "detail": "tellus in sagittis dui vel", "complete": true},
       {
-        "id": "98ed95b4-6ae4-46fd-93ad-a48ed95213cb",
-        "detail": "lacinia nisi venenatis tristique fusce congue diam",
-        "complete": true
-      },
-      {
-        "id": "277b2a21-338b-4bcb-9841-5105a6076fbc",
-        "detail": "ac lobortis vel dapibus at",
-        "complete": true
-      },
-      {
-        "id": "a0b756ec-9c72-4b05-ac85-d1fc8b654660",
-        "detail": "a libero nam dui proin leo",
-        "complete": true
-      },
-      {
-        "id": "a8c1770a-2543-4616-ac44-fe4216a49f9f",
-        "detail": "in sapien iaculis congue vivamus metus",
+        "_id": 9,
+        "detail": "aenean auctor gravida sem praesent id massa",
         "complete": false
       },
       {
-        "id": "3abce554-32db-40e3-b33e-ab0f4c4426ba",
-        "detail": "et tempus semper est quam pharetra magna",
+        "_id": 10,
+        "detail": "vestibulum ac est lacinia nisi venenatis",
         "complete": true
       },
       {
-        "id": "7a1ed9a0-28b0-480a-bdfa-2373fc0d31f3",
-        "detail": "orci nullam molestie nibh in lectus",
-        "complete": false
-      },
-      {
-        "id": "560052ad-5fa2-41b3-bc79-f8e0cbf4ac99",
-        "detail": "molestie lorem quisque ut erat curabitur",
+        "_id": 11,
+        "detail": "turpis elementum ligula vehicula consequat morbi",
         "complete": false
       }
     ]
   },
   {
-    "_id": "34e793a3-bc4c-4123-8b4b-c354ed439a18",
-    "title": "aliquet at feugiat non pretium",
-    "date": "2019/06/08",
-    "summary": "penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus",
+    "_id": 2,
+    "title": "ipsum ac tellus semper interdum mauris ullamcorper",
+    "date": "01/03/2020",
+    "summary": "vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel",
     "complete": true,
-    "categories": "books",
+    "categories": ["books", "work"],
     "items": [
+      {"_id": 1, "detail": "dui vel nisl duis ac nibh", "complete": false},
       {
-        "id": "c6266f00-f681-4bf2-8666-bcb8bdda22d4",
-        "detail": "nulla neque libero convallis eget",
+        "_id": 2,
+        "detail": "massa id lobortis convallis tortor risus dapibus",
+        "complete": true
+      },
+      {"_id": 3, "detail": "proin eu mi nulla ac enim", "complete": true},
+      {
+        "_id": 4,
+        "detail": "quis augue luctus tincidunt nulla mollis",
         "complete": false
       },
       {
-        "id": "4f0e35b5-e889-4292-97b3-c18773bc1332",
-        "detail": "blandit lacinia erat vestibulum sed",
+        "_id": 5,
+        "detail": "magna bibendum imperdiet nullam orci pede venenatis",
+        "complete": false
+      },
+      {
+        "_id": 6,
+        "detail": "orci luctus et ultrices posuere cubilia curae",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "suspendisse accumsan tortor quis turpis sed ante",
         "complete": true
       },
       {
-        "id": "6ee54cf3-a3f0-454a-8c3f-84d06c96d0d9",
-        "detail": "aenean sit amet justo morbi ut",
-        "complete": false
-      },
-      {
-        "id": "b1719e3a-8162-456a-ad64-583fec4afb62",
-        "detail": "sociis natoque penatibus et magnis dis",
-        "complete": false
-      },
-      {
-        "id": "3e0d8564-24db-4e4f-a8c3-b5a1d6f32165",
-        "detail": "quam turpis adipiscing lorem vitae mattis",
-        "complete": false
-      },
-      {
-        "id": "750a4e34-a906-4f25-a9a2-37d512edc10e",
-        "detail": "diam neque vestibulum eget vulputate",
+        "_id": 8,
+        "detail": "velit eu est congue elementum in hac",
         "complete": true
       },
       {
-        "id": "98002838-6947-45ad-852b-3fb185ee97dc",
-        "detail": "donec ut dolor morbi vel lectus in",
+        "_id": 9,
+        "detail": "nisi volutpat eleifend donec ut dolor",
+        "complete": false
+      },
+      {
+        "_id": 10,
+        "detail": "felis sed lacus morbi sem mauris",
+        "complete": false
+      },
+      {
+        "_id": 11,
+        "detail": "non velit nec nisi vulputate nonummy maecenas",
         "complete": true
       },
       {
-        "id": "d5619520-af09-4ff2-a2ad-6f2cdca9896a",
-        "detail": "ut at dolor quis odio",
-        "complete": false
-      }
-    ]
-  },
-  {
-    "_id": "50d6df07-f4b3-4c66-8b37-45652f35fe10",
-    "title": "fusce consequat nulla nisl nunc nisl duis",
-    "date": "2019/11/03",
-    "summary": "quis lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas ut",
-    "complete": false,
-    "categories": "books",
-    "items": [
-      {
-        "id": "89983009-4ca1-472c-a2f5-0688be22edfb",
-        "detail": "tempus sit amet sem fusce consequat",
-        "complete": false
-      },
-      {
-        "id": "44224dd7-586e-4a52-aab5-ee436f48c0bc",
-        "detail": "eros viverra eget congue eget semper",
-        "complete": false
-      },
-      {
-        "id": "6b739122-c50e-4e91-923c-87cd87b325a7",
-        "detail": "luctus cum sociis natoque penatibus et magnis",
-        "complete": true
-      },
-      {
-        "id": "d5d2cafd-ee67-45e9-9b18-2dc2c7477127",
-        "detail": "in hac habitasse platea dictumst morbi vestibulum",
-        "complete": false
-      },
-      {
-        "id": "d743bbcb-ef7d-4666-967e-4296d5d3150d",
-        "detail": "vestibulum aliquet ultrices erat tortor",
-        "complete": false
-      },
-      {
-        "id": "013ea060-558b-4ead-88d6-8ce6a133e42f",
-        "detail": "a pede posuere nonummy integer non velit",
-        "complete": false
-      },
-      {
-        "id": "2569803b-ef41-44b6-8bf2-8c47429e279d",
-        "detail": "sit amet diam in magna bibendum imperdiet",
-        "complete": true
-      },
-      {
-        "id": "f63aab58-c989-4137-bb5a-a9efc720f646",
-        "detail": "vivamus metus arcu adipiscing molestie hendrerit",
-        "complete": true
-      },
-      {
-        "id": "65be0ca8-67f8-4d8d-8f8c-11f74094e33b",
-        "detail": "condimentum id luctus nec molestie sed justo",
-        "complete": false
-      },
-      {
-        "id": "47801091-10dd-4864-82de-96ea8562dba9",
-        "detail": "ac tellus semper interdum mauris",
-        "complete": true
-      },
-      {
-        "id": "dbda770e-227a-4fd2-98a6-d66e3fedf179",
-        "detail": "arcu libero rutrum ac lobortis vel",
+        "_id": 12,
+        "detail": "pede ac diam cras pellentesque volutpat",
         "complete": true
       }
     ]
   },
   {
-    "_id": "cbf8a551-bc9f-46e0-a445-3e1784cb6fc1",
-    "title": "convallis duis consequat dui nec",
-    "date": "2019/03/14",
-    "summary": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum",
-    "complete": false,
-    "categories": "tools",
-    "items": [
-      {
-        "id": "92603954-51e9-483f-91db-4099466ed746",
-        "detail": "tellus semper interdum mauris ullamcorper",
-        "complete": true
-      },
-      {
-        "id": "56324188-ddb6-49f9-aa10-6e61cc8f2919",
-        "detail": "sit amet turpis elementum ligula vehicula consequat",
-        "complete": false
-      },
-      {
-        "id": "c33c9dbb-4299-4849-8b3d-050e1047748b",
-        "detail": "quis tortor id nulla ultrices aliquet",
-        "complete": false
-      },
-      {
-        "id": "b81b588d-095e-4c46-be72-00d5aa79bc34",
-        "detail": "nulla sed accumsan felis ut at dolor",
-        "complete": true
-      },
-      {
-        "id": "be127edb-49fa-403a-bcea-d179e6140a20",
-        "detail": "vitae quam suspendisse potenti nullam",
-        "complete": true
-      },
-      {
-        "id": "edb91f25-78a8-402e-aebd-dd9c1f43cdd2",
-        "detail": "sagittis nam congue risus semper",
-        "complete": false
-      },
-      {
-        "id": "c45afcba-45f6-46d5-a56d-481c6c991962",
-        "detail": "diam neque vestibulum eget vulputate",
-        "complete": false
-      },
-      {
-        "id": "0bdb7d62-cbc9-492d-b815-3337cf275f07",
-        "detail": "vestibulum ac est lacinia nisi",
-        "complete": true
-      },
-      {
-        "id": "49167071-3413-4e3a-9f75-adf0466985c0",
-        "detail": "ut tellus nulla ut erat id mauris",
-        "complete": false
-      }
-    ]
-  },
-  {
-    "_id": "896e4db7-af1a-451e-996c-ad5f246135cb",
-    "title": "amet nulla quisque arcu libero",
-    "date": "2018/12/29",
-    "summary": "justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus",
+    "_id": 3,
+    "title": "id nisl venenatis lacinia aenean sit",
+    "date": "01/10/2020",
+    "summary": "vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis",
     "complete": true,
-    "categories": "business",
+    "categories": ["books", "work"],
     "items": [
       {
-        "id": "2730231b-0a2c-4e23-88be-842382b9dc7e",
-        "detail": "tellus nulla ut erat id mauris vulputate",
-        "complete": true
-      },
-      {
-        "id": "1af4bf0a-d5bb-430e-a663-33fbbbc1e993",
-        "detail": "nulla nisl nunc nisl duis",
-        "complete": false
-      },
-      {
-        "id": "7678217c-8135-473b-a98b-f27d8ad18d96",
-        "detail": "maecenas ut massa quis augue luctus tincidunt",
-        "complete": false
-      },
-      {
-        "id": "78eb7681-9691-4992-8c68-5961a23f63f9",
-        "detail": "sed augue aliquam erat volutpat in",
-        "complete": false
-      },
-      {
-        "id": "d43d4bb7-6731-48ad-8eff-863519fe2ce8",
-        "detail": "molestie lorem quisque ut erat curabitur",
-        "complete": true
-      },
-      {
-        "id": "7d2fcf12-f58d-4e39-b1a6-0c4839996264",
-        "detail": "facilisi cras non velit nec nisi vulputate",
-        "complete": false
-      },
-      {
-        "id": "3ec0ebbc-0812-41c9-b6f5-50fc00dc8ab8",
-        "detail": "in hac habitasse platea dictumst",
-        "complete": false
-      },
-      {
-        "id": "72277e72-a24d-4163-a828-5a045438b390",
-        "detail": "ipsum primis in faucibus orci",
-        "complete": false
-      },
-      {
-        "id": "20eb89ce-6187-4f81-afb7-49ba6a438867",
-        "detail": "cum sociis natoque penatibus et magnis dis",
-        "complete": false
-      },
-      {
-        "id": "87f03e97-42c4-4c0b-960d-9219da54415f",
-        "detail": "sit amet nunc viverra dapibus nulla suscipit",
-        "complete": true
-      },
-      {
-        "id": "e74d7a79-a7bf-4fa4-95f3-e24fd5d715bf",
-        "detail": "etiam pretium iaculis justo in",
-        "complete": true
-      },
-      {
-        "id": "2cf35662-3da3-4540-b184-e8d4f262fd77",
-        "detail": "vitae nisi nam ultrices libero non mattis",
-        "complete": true
-      }
-    ]
-  },
-  {
-    "_id": "1cac933c-a60c-42ef-94bb-18e52839fdc8",
-    "title": "duis ac nibh fusce lacus purus",
-    "date": "2019/06/20",
-    "summary": "mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum integer a",
-    "complete": true,
-    "categories": "work",
-    "items": [
-      {
-        "id": "084c9bb4-ae61-4a34-9edd-1ba1327510e2",
-        "detail": "nulla pede ullamcorper augue a",
-        "complete": false
-      },
-      {
-        "id": "3899e25c-f732-4905-acc2-b872ebbf0b65",
-        "detail": "ullamcorper augue a suscipit nulla",
-        "complete": false
-      },
-      {
-        "id": "3deb7edc-9102-436c-b642-d21a53622a81",
-        "detail": "a feugiat et eros vestibulum",
-        "complete": true
-      },
-      {
-        "id": "3ee664db-ce32-44e3-855e-c5a9feecba64",
-        "detail": "molestie nibh in lectus pellentesque at nulla",
-        "complete": true
-      },
-      {
-        "id": "55b3e1d0-d753-4a72-b53d-3e287532c4a8",
-        "detail": "et ultrices posuere cubilia curae donec",
-        "complete": false
-      },
-      {
-        "id": "044a6e16-ccfd-437a-aa4c-e412e6670a77",
-        "detail": "ultrices libero non mattis pulvinar",
-        "complete": false
-      },
-      {
-        "id": "30069a18-86e7-439e-b55e-4953128e81da",
-        "detail": "scelerisque quam turpis adipiscing lorem vitae",
-        "complete": true
-      },
-      {
-        "id": "121fdca2-ff16-4859-87c4-e13dc46ef1e6",
-        "detail": "est quam pharetra magna ac consequat metus",
-        "complete": false
-      }
-    ]
-  },
-  {
-    "_id": "94a4a469-63c6-42f4-b72f-653facff9624",
-    "title": "ipsum primis in faucibus orci",
-    "date": "2019/02/06",
-    "summary": "mauris morbi non lectus aliquam sit amet diam in magna",
-    "complete": true,
-    "categories": "work",
-    "items": [
-      {
-        "id": "58ebeac3-16ce-4b17-8f8d-288060ca434e",
-        "detail": "sit amet justo morbi ut odio",
-        "complete": false
-      },
-      {
-        "id": "a148a4d4-49cc-45b1-bf41-69ec4e0f5128",
-        "detail": "a libero nam dui proin",
-        "complete": true
-      },
-      {
-        "id": "6748f98e-de67-486e-a9cf-c7c2bc6db3a4",
-        "detail": "justo etiam pretium iaculis justo",
-        "complete": false
-      },
-      {
-        "id": "4bad045a-80dc-4df8-a642-0cbe6cc26460",
-        "detail": "vitae nisi nam ultrices libero",
-        "complete": false
-      },
-      {
-        "id": "27505a53-0616-4907-aedb-e06cfe3d1887",
-        "detail": "sagittis dui vel nisl duis ac nibh",
-        "complete": true
-      },
-      {
-        "id": "84a143d0-814c-494e-a53b-4c17f2189947",
-        "detail": "semper rutrum nulla nunc purus phasellus",
-        "complete": false
-      },
-      {
-        "id": "eeab8cb6-78ed-409e-9952-6c3922f47f23",
-        "detail": "integer aliquet massa id lobortis convallis tortor",
-        "complete": false
-      },
-      {
-        "id": "71cf7103-302c-4d7a-a639-5a2ea0104411",
-        "detail": "congue elementum in hac habitasse",
-        "complete": false
-      },
-      {
-        "id": "d8248169-1ab6-4b23-a90c-144072a62329",
-        "detail": "in sagittis dui vel nisl duis ac",
-        "complete": false
-      },
-      {
-        "id": "4be592ab-c066-4bdc-ac42-188d846dceef",
-        "detail": "dictumst etiam faucibus cursus urna",
-        "complete": true
-      },
-      {
-        "id": "b120b180-abc0-402e-a09e-18ab09ee4763",
-        "detail": "risus praesent lectus vestibulum quam sapien",
-        "complete": true
-      },
-      {
-        "id": "7aa23dd8-c01e-41fc-80a9-2a147889584f",
-        "detail": "curae mauris viverra diam vitae",
-        "complete": true
-      }
-    ]
-  },
-  {
-    "_id": "2ee0dac2-e36a-41f9-99fc-05d7c0d9dda2",
-    "title": "sapien cursus vestibulum proin eu mi",
-    "date": "2019/05/13",
-    "summary": "maecenas tristique est et tempus semper est quam pharetra magna ac consequat",
-    "complete": false,
-    "categories": "books",
-    "items": [
-      {
-        "id": "a0c337b4-7aac-4302-a652-555a75f340fc",
-        "detail": "non ligula pellentesque ultrices phasellus",
-        "complete": false
-      },
-      {
-        "id": "2c37fb47-5ab8-4e61-b0a7-faf531e313ef",
-        "detail": "tellus nulla ut erat id",
-        "complete": false
-      },
-      {
-        "id": "503da5a4-50f9-478f-b149-fe3956336ba4",
-        "detail": "vitae mattis nibh ligula nec sem duis",
-        "complete": false
-      },
-      {
-        "id": "27ba8dd8-3a3c-46e6-ada5-1925066aac62",
-        "detail": "ut erat id mauris vulputate",
-        "complete": true
-      },
-      {
-        "id": "3f44f919-0a6d-4183-b51e-17518d7259ef",
-        "detail": "curae nulla dapibus dolor vel est",
-        "complete": true
-      },
-      {
-        "id": "df64e6b4-2622-4bd7-ac89-47890710a8d9",
-        "detail": "lacinia eget tincidunt eget tempus vel pede",
-        "complete": true
-      },
-      {
-        "id": "ccb4f287-6d75-4fb5-8208-a5b9dbb19c4a",
-        "detail": "vehicula condimentum curabitur in libero ut massa",
-        "complete": true
-      },
-      {
-        "id": "461e5a71-d8cd-46cd-a48c-b7c745cc06b5",
-        "detail": "ipsum dolor sit amet consectetuer adipiscing",
-        "complete": true
-      },
-      {
-        "id": "d59f0d64-0441-4426-bdb7-f9eff0deaa17",
-        "detail": "vestibulum ac est lacinia nisi",
-        "complete": false
-      },
-      {
-        "id": "d2f1ef93-d3fc-4d22-a282-39afe54df266",
-        "detail": "mauris eget massa tempor convallis nulla",
-        "complete": true
-      }
-    ]
-  },
-  {
-    "_id": "37caa071-ef90-4bc2-98fa-6ee829296f36",
-    "title": "a suscipit nulla elit ac nulla",
-    "date": "2019/08/05",
-    "summary": "ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla",
-    "complete": false,
-    "categories": "food",
-    "items": [
-      {
-        "id": "cd5a7c94-602e-438e-9c89-57286f2c9fca",
-        "detail": "vivamus metus arcu adipiscing molestie hendrerit at",
-        "complete": true
-      },
-      {
-        "id": "8394efb3-8e71-40b7-a52a-47a4402a8bfc",
-        "detail": "nisi venenatis tristique fusce congue diam id",
-        "complete": false
-      },
-      {
-        "id": "b00e7a9e-2b82-4f66-8f0f-9235f69b544d",
-        "detail": "in faucibus orci luctus et",
-        "complete": true
-      },
-      {
-        "id": "5cfd398e-2d78-45d7-8f37-6733da97e368",
-        "detail": "ut rhoncus aliquet pulvinar sed",
-        "complete": true
-      },
-      {
-        "id": "e7fd88bd-3919-4b20-8538-95f982c6a65c",
-        "detail": "lacinia nisi venenatis tristique fusce congue",
-        "complete": true
-      },
-      {
-        "id": "765f42b6-6dc4-494b-9e86-2b28bdd238f0",
-        "detail": "rutrum ac lobortis vel dapibus at",
-        "complete": false
-      },
-      {
-        "id": "11957981-db42-4ce9-9e64-da643babcb05",
-        "detail": "vitae quam suspendisse potenti nullam porttitor lacus",
-        "complete": false
-      },
-      {
-        "id": "c082aa6d-8c86-457b-a37a-43af5e989c2d",
-        "detail": "nullam sit amet turpis elementum ligula vehicula",
-        "complete": false
-      },
-      {
-        "id": "f74f47fd-f40d-459d-afd8-f875bd48e9e6",
-        "detail": "maecenas tristique est et tempus semper",
-        "complete": false
-      },
-      {
-        "id": "41f5852c-6426-46a6-ab97-1351101791b7",
-        "detail": "adipiscing lorem vitae mattis nibh ligula nec",
-        "complete": false
-      },
-      {
-        "id": "d354f4a0-155e-4394-83f5-b155edbdcfec",
-        "detail": "pulvinar nulla pede ullamcorper augue a",
-        "complete": false
-      }
-    ]
-  },
-  {
-    "_id": "0c836a98-b2ea-481e-aaa0-11d202855fe2",
-    "title": "vel pede morbi porttitor lorem id",
-    "date": "2019/06/23",
-    "summary": "euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec",
-    "complete": true,
-    "categories": "food",
-    "items": [
-      {
-        "id": "6416dab7-2a06-48dd-86e0-44f0b85a4f23",
-        "detail": "nisi vulputate nonummy maecenas tincidunt",
-        "complete": true
-      },
-      {
-        "id": "87ba830e-414a-484a-aa67-8ea60aa34f97",
-        "detail": "nulla sed vel enim sit amet nunc",
-        "complete": false
-      },
-      {
-        "id": "46c877a2-e84a-4f9c-8b0f-a5196ddebefd",
-        "detail": "nulla suscipit ligula in lacus curabitur at",
-        "complete": true
-      },
-      {
-        "id": "63e48627-3a08-4e96-ad1f-37d8747c599b",
-        "detail": "nec dui luctus rutrum nulla",
-        "complete": true
-      },
-      {
-        "id": "4c2cc409-ddbf-4d55-93d6-9f1532917672",
-        "detail": "potenti cras in purus eu magna vulputate",
-        "complete": false
-      },
-      {
-        "id": "882b5710-6b5b-4105-813b-62b0847bdef5",
-        "detail": "augue vestibulum ante ipsum primis",
-        "complete": true
-      },
-      {
-        "id": "7fe5a25d-4a2e-4dff-b8b1-7ad677e6405a",
-        "detail": "in purus eu magna vulputate luctus",
-        "complete": true
-      },
-      {
-        "id": "7ad5825c-8515-4d08-bb5e-eca15b98ee98",
-        "detail": "in lacus curabitur at ipsum ac tellus",
-        "complete": false
-      },
-      {
-        "id": "8839bffa-f347-4078-87bc-d7e69032fb8d",
-        "detail": "in tempor turpis nec euismod scelerisque quam",
-        "complete": true
-      },
-      {
-        "id": "43de5fac-d016-4846-8476-676ac0daea54",
+        "_id": 1,
         "detail": "nullam orci pede venenatis non sodales",
         "complete": false
       },
       {
-        "id": "68477e51-17b5-43c4-b5cb-a6803858937c",
-        "detail": "ut erat id mauris vulputate elementum nullam",
+        "_id": 2,
+        "detail": "amet consectetuer adipiscing elit proin",
+        "complete": false
+      },
+      {
+        "_id": 3,
+        "detail": "egestas metus aenean fermentum donec",
+        "complete": true
+      },
+      {
+        "_id": 4,
+        "detail": "sit amet diam in magna bibendum imperdiet",
+        "complete": false
+      },
+      {
+        "_id": 5,
+        "detail": "dui maecenas tristique est et tempus semper",
+        "complete": false
+      },
+      {
+        "_id": 6,
+        "detail": "et eros vestibulum ac est lacinia nisi",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "nam nulla integer pede justo lacinia",
+        "complete": false
+      },
+      {
+        "_id": 8,
+        "detail": "pellentesque ultrices phasellus id sapien in sapien",
+        "complete": true
+      },
+      {
+        "_id": 9,
+        "detail": "leo pellentesque ultrices mattis odio",
+        "complete": true
+      },
+      {
+        "_id": 10,
+        "detail": "consequat nulla nisl nunc nisl duis",
+        "complete": false
+      },
+      {
+        "_id": 11,
+        "detail": "accumsan tortor quis turpis sed ante",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "title": "nec nisi volutpat eleifend donec ut",
+    "date": "12/31/2019",
+    "summary": "congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu",
+    "complete": false,
+    "categories": ["school", "travel"],
+    "items": [
+      {
+        "_id": 1,
+        "detail": "ultrices vel augue vestibulum ante ipsum",
+        "complete": false
+      },
+      {
+        "_id": 2,
+        "detail": "justo sollicitudin ut suscipit a feugiat et",
+        "complete": false
+      },
+      {
+        "_id": 3,
+        "detail": "integer a nibh in quis justo maecenas",
+        "complete": false
+      },
+      {
+        "_id": 4,
+        "detail": "vulputate luctus cum sociis natoque penatibus et",
+        "complete": true
+      },
+      {
+        "_id": 5,
+        "detail": "mi sit amet lobortis sapien sapien",
+        "complete": true
+      },
+      {
+        "_id": 6,
+        "detail": "consequat in consequat ut nulla sed",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "auctor gravida sem praesent id massa",
+        "complete": true
+      },
+      {
+        "_id": 8,
+        "detail": "est et tempus semper est quam pharetra",
+        "complete": true
+      },
+      {
+        "_id": 9,
+        "detail": "nulla quisque arcu libero rutrum ac lobortis",
+        "complete": true
+      },
+      {
+        "_id": 10,
+        "detail": "montes nascetur ridiculus mus etiam vel augue",
+        "complete": false
+      },
+      {
+        "_id": 11,
+        "detail": "in lectus pellentesque at nulla suspendisse potenti",
+        "complete": true
+      },
+      {
+        "_id": 12,
+        "detail": "nibh quisque id justo sit amet sapien",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "title": "blandit nam nulla integer pede",
+    "date": "12/27/2019",
+    "summary": "velit eu est congue elementum in hac habitasse platea dictumst",
+    "complete": false,
+    "categories": ["travel", "business"],
+    "items": [
+      {"_id": 1, "detail": "sit amet justo morbi ut", "complete": false},
+      {
+        "_id": 2,
+        "detail": "amet erat nulla tempus vivamus in",
+        "complete": true
+      },
+      {
+        "_id": 3,
+        "detail": "diam cras pellentesque volutpat dui",
+        "complete": false
+      },
+      {"_id": 4, "detail": "odio cras mi pede malesuada in", "complete": true},
+      {"_id": 5, "detail": "arcu libero rutrum ac lobortis", "complete": false},
+      {
+        "_id": 6,
+        "detail": "primis in faucibus orci luctus et ultrices",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "id ornare imperdiet sapien urna",
+        "complete": false
+      },
+      {"_id": 8, "detail": "lobortis sapien sapien non mi", "complete": false},
+      {
+        "_id": 9,
+        "detail": "sed accumsan felis ut at dolor quis",
+        "complete": false
+      },
+      {
+        "_id": 10,
+        "detail": "congue eget semper rutrum nulla nunc",
+        "complete": true
+      }
+    ]
+  },
+  {
+    "_id": 6,
+    "title": "duis bibendum felis sed interdum venenatis turpis",
+    "date": "01/06/2020",
+    "summary": "fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis",
+    "complete": true,
+    "categories": ["travel", "school"],
+    "items": [
+      {
+        "_id": 1,
+        "detail": "tincidunt eu felis fusce posuere felis sed",
+        "complete": false
+      },
+      {
+        "_id": 2,
+        "detail": "ac lobortis vel dapibus at diam nam",
+        "complete": false
+      },
+      {
+        "_id": 3,
+        "detail": "volutpat dui maecenas tristique est et tempus",
+        "complete": false
+      },
+      {
+        "_id": 4,
+        "detail": "mattis pulvinar nulla pede ullamcorper augue",
+        "complete": true
+      },
+      {"_id": 5, "detail": "nisl duis bibendum felis sed", "complete": false},
+      {
+        "_id": 6,
+        "detail": "tincidunt lacus at velit vivamus vel nulla",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "in est risus auctor sed tristique in",
+        "complete": false
+      },
+      {
+        "_id": 8,
+        "detail": "lacinia eget tincidunt eget tempus",
+        "complete": false
+      },
+      {"_id": 9, "detail": "rutrum ac lobortis vel dapibus", "complete": false},
+      {
+        "_id": 10,
+        "detail": "quis justo maecenas rhoncus aliquam lacus",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "_id": 7,
+    "title": "maecenas pulvinar lobortis est phasellus sit amet",
+    "date": "01/10/2020",
+    "summary": "arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst",
+    "complete": false,
+    "categories": ["school", "tools"],
+    "items": [
+      {
+        "_id": 1,
+        "detail": "id consequat in consequat ut nulla",
+        "complete": false
+      },
+      {
+        "_id": 2,
+        "detail": "tristique fusce congue diam id ornare imperdiet",
+        "complete": false
+      },
+      {
+        "_id": 3,
+        "detail": "ut mauris eget massa tempor convallis nulla",
+        "complete": true
+      },
+      {"_id": 4, "detail": "turpis enim blandit mi in", "complete": true},
+      {
+        "_id": 5,
+        "detail": "ultrices libero non mattis pulvinar nulla pede",
+        "complete": true
+      },
+      {
+        "_id": 6,
+        "detail": "platea dictumst morbi vestibulum velit id pretium",
+        "complete": true
+      },
+      {"_id": 7, "detail": "vel accumsan tellus nisi eu", "complete": false},
+      {
+        "_id": 8,
+        "detail": "erat id mauris vulputate elementum nullam varius",
+        "complete": true
+      },
+      {"_id": 9, "detail": "nam dui proin leo odio", "complete": true},
+      {
+        "_id": 10,
+        "detail": "augue luctus tincidunt nulla mollis molestie lorem",
+        "complete": false
+      },
+      {"_id": 11, "detail": "mi sit amet lobortis sapien", "complete": true},
+      {
+        "_id": 12,
+        "detail": "est et tempus semper est quam pharetra",
+        "complete": true
+      }
+    ]
+  },
+  {
+    "_id": 8,
+    "title": "nulla elit ac nulla sed vel enim",
+    "date": "12/26/2019",
+    "summary": "eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id",
+    "complete": false,
+    "categories": ["school", "work"],
+    "items": [
+      {
+        "_id": 1,
+        "detail": "et ultrices posuere cubilia curae donec",
+        "complete": false
+      },
+      {"_id": 2, "detail": "viverra eget congue eget semper", "complete": true},
+      {
+        "_id": 3,
+        "detail": "scelerisque mauris sit amet eros suspendisse",
+        "complete": true
+      },
+      {
+        "_id": 4,
+        "detail": "venenatis lacinia aenean sit amet",
+        "complete": false
+      },
+      {"_id": 5, "detail": "in porttitor pede justo eu", "complete": true},
+      {
+        "_id": 6,
+        "detail": "in libero ut massa volutpat convallis morbi",
+        "complete": true
+      },
+      {"_id": 7, "detail": "ac est lacinia nisi venenatis", "complete": false},
+      {
+        "_id": 8,
+        "detail": "amet erat nulla tempus vivamus in",
+        "complete": false
+      },
+      {
+        "_id": 9,
+        "detail": "nulla dapibus dolor vel est donec odio",
+        "complete": true
+      },
+      {
+        "_id": 10,
+        "detail": "ligula suspendisse ornare consequat lectus in est",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "_id": 9,
+    "title": "in ante vestibulum ante ipsum primis",
+    "date": "12/26/2019",
+    "summary": "amet lobortis sapien sapien non mi integer ac neque duis",
+    "complete": true,
+    "categories": ["school", "food"],
+    "items": [
+      {
+        "_id": 1,
+        "detail": "sagittis nam congue risus semper",
+        "complete": true
+      },
+      {
+        "_id": 2,
+        "detail": "amet eros suspendisse accumsan tortor",
+        "complete": false
+      },
+      {
+        "_id": 3,
+        "detail": "est risus auctor sed tristique in tempus",
+        "complete": false
+      },
+      {
+        "_id": 4,
+        "detail": "felis eu sapien cursus vestibulum",
+        "complete": false
+      },
+      {
+        "_id": 5,
+        "detail": "est donec odio justo sollicitudin ut",
+        "complete": false
+      },
+      {
+        "_id": 6,
+        "detail": "ligula vehicula consequat morbi a ipsum integer",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "nisl ut volutpat sapien arcu sed augue",
+        "complete": false
+      },
+      {
+        "_id": 8,
+        "detail": "adipiscing elit proin risus praesent",
+        "complete": true
+      },
+      {
+        "_id": 9,
+        "detail": "purus phasellus in felis donec semper",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "_id": 10,
+    "title": "sit amet lobortis sapien sapien non",
+    "date": "12/30/2019",
+    "summary": "vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum",
+    "complete": true,
+    "categories": ["food", "school"],
+    "items": [
+      {"_id": 1, "detail": "donec quis orci eget orci", "complete": false},
+      {"_id": 2, "detail": "potenti cras in purus eu", "complete": true},
+      {
+        "_id": 3,
+        "detail": "vulputate ut ultrices vel augue vestibulum",
+        "complete": true
+      },
+      {
+        "_id": 4,
+        "detail": "semper rutrum nulla nunc purus phasellus in",
+        "complete": false
+      },
+      {
+        "_id": 5,
+        "detail": "justo maecenas rhoncus aliquam lacus",
+        "complete": false
+      },
+      {
+        "_id": 6,
+        "detail": "consectetuer adipiscing elit proin interdum",
+        "complete": false
+      },
+      {
+        "_id": 7,
+        "detail": "potenti nullam porttitor lacus at turpis donec",
+        "complete": true
+      },
+      {
+        "_id": 8,
+        "detail": "natoque penatibus et magnis dis parturient",
+        "complete": true
+      },
+      {
+        "_id": 9,
+        "detail": "habitasse platea dictumst aliquam augue",
         "complete": false
       }
     ]

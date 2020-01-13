@@ -6,23 +6,30 @@ import {
   GET_LIST,
   SET_LISTS,
   ERROR,
+  COMPLETE,
+  SET_LIST_TODAY,
+  SET_LIST_WEEK,
+  SET_LIST_OLD,
 } from '../types/listTypes';
 
 const INITIAL_STATE = {
-  list: {},
+  list: [],
+  today: [],
+  thisWeek: [],
+  old: [],
   selected: {},
   cargando: false,
   error: '',
 };
 
-function list(state = INITIAL_STATE, action) {
+export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_LIST:
-      break;
+      return {...state, list: action.payload, selected: {}};
     case REMOVE_LIST:
-      break;
+      return {...state, list: action.payload, selected: {}};
     case UPDATE_LIST:
-      break;
+      return {...state, list: action.payload};
     case GET_LIST: {
       return {...state, selected: action.payload};
     }
@@ -31,11 +38,21 @@ function list(state = INITIAL_STATE, action) {
     case SET_LISTS: {
       return {...state, list: action.payload};
     }
+    case SET_LIST_TODAY: {
+      return {...state, today: action.payload};
+    }
+    case SET_LIST_WEEK: {
+      return {...state, thisWeek: action.payload};
+    }
+    case SET_LIST_OLD: {
+      return {...state, old: action.payload};
+    }
+    case COMPLETE: {
+      return {...state, list: action.payload};
+    }
     case ERROR:
       return {...state, error: action.payload, cargando: false};
     default:
       return state;
   }
-}
-
-export default list;
+};

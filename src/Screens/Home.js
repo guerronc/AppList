@@ -15,7 +15,9 @@ class Home extends Component {
     };
   };
 
-  renderEmpty = () => <Empty text="No hay sugerencias" />;
+  renderEmpty = () => (
+    <Empty text="Ingresa una lista en el boton de la parte inferior" />
+  );
   itemSeparator = () => <Separator />;
   renderItem = ({item}) => {
     return <ItemList {...item} />;
@@ -24,24 +26,24 @@ class Home extends Component {
     return <View style={styles.footer}></View>;
   };
   componentDidMount() {
-    const {traerTodas} = this.props;
-    traerTodas();
+    const {getAll} = this.props;
+    getAll();
   }
 
   render() {
     return (
       <Fragment>
-        <ListLayout title="TODAY">
+        <ListLayout title="ALL">
           <FlatList
             data={this.props.list}
             ListEmptyComponent={this.renderEmpty}
             ItemSeparatorComponent={this.itemSeparator}
             renderItem={this.renderItem}
-            keyExtractor={item => item._id}
+            keyExtractor={item => item._id.toString()}
             ListFooterComponent={this.renderFooter}
           />
         </ListLayout>
-        <Add />
+        <Add type="List" />
       </Fragment>
     );
   }
