@@ -3,81 +3,12 @@ import {
   ERROR,
   GET_LIST,
   ADD_LIST,
-  UPDATE_LIST,
+  UPDATE_TITLE_LIST,
   REMOVE_LIST,
   COMPLETE,
-  SET_LIST_TODAY,
-  SET_LIST_WEEK,
-  SET_LIST_OLD,
 } from '../types/listTypes';
-import moment from 'moment';
 
 export const getAll = () => async (dispatch, getState) => {
-  try {
-    const data = getState().list;
-    dispatch({
-      type: SET_LISTS,
-      payload: data,
-    });
-  } catch (error) {
-    dispatch({
-      type: ERROR,
-      payload: `ActionList => getAll => Detalle error: ${error.message}`,
-    });
-  }
-};
-
-export const getToday = () => async (dispatch, getState) => {
-  try {
-    console.log('today');
-    const data = getState().list;
-    const listToday = [...data];
-
-    console.log('listToday: ', listToday);
-
-    dispatch({
-      type: SET_LIST_TODAY,
-      payload: listToday,
-    });
-  } catch (error) {
-    dispatch({
-      type: ERROR,
-      payload: `ActionList => getToday => Detalle error: ${error.message}`,
-    });
-  }
-};
-
-export const getThisWeek = () => async (dispatch, getState) => {
-  try {
-    const data = getState().list;
-    dispatch({
-      type: SET_LIST_WEEK,
-      payload: data,
-    });
-  } catch (error) {
-    dispatch({
-      type: ERROR,
-      payload: `ActionList => getAll => Detalle error: ${error.message}`,
-    });
-  }
-};
-
-export const getOld = () => async (dispatch, getState) => {
-  try {
-    const data = getState().list;
-    dispatch({
-      type: SET_LIST_OLD,
-      payload: data,
-    });
-  } catch (error) {
-    dispatch({
-      type: ERROR,
-      payload: `ActionList => getAll => Detalle error: ${error.message}`,
-    });
-  }
-};
-
-export const getComplete = () => async (dispatch, getState) => {
   try {
     const data = getState().list;
     dispatch({
@@ -133,24 +64,45 @@ export const addList = newList => async (dispatch, getState) => {
   }
 };
 
-export const updateList = newList => async (dispatch, getState) => {
+export const updateTitleList = (title, id) => async (dispatch, getState) => {
   try {
     const list = getState().list;
     const editList = [...list];
-    const index = editList.findIndex(item => item._id === newList._id);
+    const index = editList.findIndex(item => item._id === id);
 
     editList[index] = {
       ...list[index],
-      title: newList.title,
-      date: newList.date,
-      summary: newList.summary,
-      complete: newList.complete,
-      categories: newList.categories,
-      items: newList.items,
+      title: title,
     };
 
     dispatch({
-      type: UPDATE_LIST,
+      type: UPDATE_TITLE_LIST,
+      payload: editList,
+    });
+  } catch (error) {
+    dispatch({
+      type: ERROR,
+      payload: `ActionList => updateList => Detalle error: ${error.message}`,
+    });
+  }
+};
+
+export const updateSummaryList = (summary, id) => async (
+  dispatch,
+  getState,
+) => {
+  try {
+    const list = getState().list;
+    const editList = [...list];
+    const index = editList.findIndex(item => item._id === id);
+
+    editList[index] = {
+      ...list[index],
+      summary: summary,
+    };
+
+    dispatch({
+      type: UPDATE_TITLE_LIST,
       payload: editList,
     });
   } catch (error) {

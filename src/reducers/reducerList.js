@@ -1,7 +1,7 @@
 import {
   ADD_LIST,
   REMOVE_LIST,
-  UPDATE_LIST,
+  UPDATE_TITLE_LIST,
   GET_ALL_LIST,
   GET_LIST,
   SET_LISTS,
@@ -28,7 +28,7 @@ export default (state = INITIAL_STATE, action) => {
       return {...state, list: action.payload, selected: {}};
     case REMOVE_LIST:
       return {...state, list: action.payload, selected: {}};
-    case UPDATE_LIST:
+    case UPDATE_TITLE_LIST:
       return {...state, list: action.payload};
     case GET_LIST: {
       return {...state, selected: action.payload};

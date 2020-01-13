@@ -12,6 +12,7 @@ class ItemDetailList extends Component {
       checked: isChecked,
     });
   };
+
   render() {
     return (
       <View style={styles.container}>

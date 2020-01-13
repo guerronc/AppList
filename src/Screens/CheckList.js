@@ -18,6 +18,10 @@ class CheckList extends Component {
   constructor(props) {
     super(props);
     this.data = props.selected ? props.selected : {};
+    this.state = {
+      title: this.data.title,
+      summary: this.data.summary,
+    };
   }
   renderEmpty = () => (
     <Empty text="No hay items para tu lista, ingresa en el boton de la parte inferior" />
@@ -30,14 +34,40 @@ class CheckList extends Component {
     return <Footer data={this.data} />;
   };
 
+  updateTitle = title => {
+    const {updateTitleList} = this.props;
+    const {_id} = this.data;
+
+    this.setState({
+      title: title,
+    });
+    updateTitleList(title, _id);
+  };
+
+  updateSummary = summary => {
+    const {updateSummaryList} = this.props;
+    const {_id} = this.data;
+
+    this.setState({
+      summary: summary,
+    });
+    updateSummaryList(summary, _id);
+  };
+
   renderHeader = () => {
-    const {title, summary} = this.data;
     return (
       <View style={styles.containerTitle}>
-        <TextInput style={styles.titleHeader}>{title}</TextInput>
-        <TextInput style={styles.summaryHeader} multiline={true}>
-          {summary}
-        </TextInput>
+        <TextInput
+          value={this.state.title}
+          style={styles.titleHeader}
+          onChangeText={text => this.updateTitle(text)}
+        />
+        <TextInput
+          value={this.state.summary}
+          style={styles.summaryHeader}
+          onChangeText={text => this.updateSummary(text)}
+          multiline={true}
+        />
       </View>
     );
   };

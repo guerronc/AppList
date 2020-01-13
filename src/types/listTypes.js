@@ -9,3 +9,4 @@ export const COMPLETE = 'complete_list';
 export const SET_LIST_TODAY = 'set_all_list_today';
 export const SET_LIST_WEEK = 'set_all_list_week';
 export const SET_LIST_OLD = 'set_all_list_old';
+export const UPDATE_TITLE_LIST = 'set_all_list_old';

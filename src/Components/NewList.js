@@ -4,20 +4,49 @@ import {connect} from 'react-redux';
 import * as actionList from '../actions/actionList';
 
 class NewList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+      date: '2020-01-12',
+      summary: '',
+      categories: '',
+      items: [],
+    };
+  }
+
   handleGuardar = () => {
     const newList = {
       _id: 0,
-      title: 'Lista de compras',
-      date: '2020-01-12',
-      summary: 'Detalle de la primera lista',
+      title: this.state.title,
+      date: this.state.date,
+      summary: this.state.summary,
       complete: false,
-      categories: ['travel', 'food', 'books'],
+      categories: this.state.categories,
       items: [],
     };
 
     const {addList} = this.props;
     addList(newList);
     this.props.onPress();
+  };
+
+  updateTitle = text => {
+    this.setState({
+      title: text,
+    });
+  };
+
+  updateSummary = text => {
+    this.setState({
+      summary: text,
+    });
+  };
+
+  updateCategories = text => {
+    this.setState({
+      categories: text,
+    });
   };
 
   render() {
@@ -29,12 +58,18 @@ class NewList extends Component {
             style={styles.text}
             placeholder="Ingrese titulo de la lista"
             autoFocus={true}
+            onChangeText={text => this.updateTitle(text)}
           />
           <TextInput
             style={styles.text}
             placeholder="Ingrese una descripcion"
+            onChangeText={text => this.updateSummary(text)}
           />
-          <TextInput style={styles.text} placeholder="Ingrese una categoria" />
+          <TextInput
+            style={styles.text}
+            placeholder="Ingrese una categoria"
+            onChangeText={text => this.updateCategories(text)}
+          />
         </View>
         <View style={styles.containerButton}>
           <View style={styles.button}>
